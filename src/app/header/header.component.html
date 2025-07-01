@@ -1,0 +1,59 @@
+<header class="header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <a routerLink="/" class="logo-link">
+        <span class="logo-text">Villarias Golf</span>
+      </a>
+    </div>
+
+    <!-- Navegación desktop -->
+    <nav class="nav-desktop">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/campo" routerLinkActive="active" class="nav-link">Campo</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reservas" routerLinkActive="active" class="nav-link">Reservas</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/servicios" routerLinkActive="active" class="nav-link">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contacto" routerLinkActive="active" class="nav-link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Botón menú móvil -->
+    <button class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  <nav class="nav-mobile" [class.active]="isMenuOpen">
+    <ul class="nav-mobile-list">
+      <li class="nav-mobile-item">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-mobile-link" (click)="closeMenu()">Inicio</a>
+      </li>
+      <li class="nav-mobile-item">
+        <a routerLink="/campo" routerLinkActive="active" class="nav-mobile-link" (click)="closeMenu()">Campo</a>
+      </li>
+      <li class="nav-mobile-item">
+        <a routerLink="/reservas" routerLinkActive="active" class="nav-mobile-link" (click)="closeMenu()">Reservas</a>
+      </li>
+      <li class="nav-mobile-item">
+        <a routerLink="/servicios" routerLinkActive="active" class="nav-mobile-link" (click)="closeMenu()">Servicios</a>
+      </li>
+      <li class="nav-mobile-item">
+        <a routerLink="/contacto" routerLinkActive="active" class="nav-mobile-link" (click)="closeMenu()">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+</header>

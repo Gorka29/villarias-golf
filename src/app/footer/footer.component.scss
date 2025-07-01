@@ -1,0 +1,246 @@
+.footer {
+  background: linear-gradient(135deg, #1a3d1e 0%, #2c5530 100%);
+  color: #ffffff;
+  padding: 3rem 0 1rem;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// Sección principal del footer
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: #4ade80;
+      border-radius: 1px;
+    }
+  }
+
+  .footer-description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Enlaces sociales
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      background: #4ade80;
+      color: #1a3d1e;
+      transform: translateY(-2px);
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+// Enlaces del footer
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-left: 0;
+
+    &:hover {
+      color: #4ade80;
+      padding-left: 0.5rem;
+    }
+
+    &::before {
+      content: '→';
+      position: absolute;
+      left: -1rem;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      left: -0.5rem;
+    }
+  }
+}
+
+// Información de contacto
+.contact-info {
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: #cbd5e1;
+
+    .contact-icon {
+      color: #4ade80;
+      flex-shrink: 0;
+      margin-top: 0.125rem;
+    }
+
+    span {
+      line-height: 1.5;
+    }
+  }
+}
+
+// Horarios
+.hours-info {
+  .hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .day {
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+
+    .time {
+      color: #4ade80;
+      font-weight: 600;
+    }
+  }
+}
+
+// Línea divisoria
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+  margin: 2rem 0;
+}
+
+// Footer inferior
+.footer-bottom {
+  .footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .copyright {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+
+  .footer-bottom-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .footer-bottom-link {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #4ade80;
+      }
+    }
+  }
+}
+
+// Media queries para responsive
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom {
+    .footer-bottom-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .footer-bottom-links {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 0.75rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
