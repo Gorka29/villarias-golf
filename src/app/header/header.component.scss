@@ -173,9 +173,9 @@
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       transition: color 0.3s ease;
       text-align: center;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
+      background: transparent;
+      min-height: 32px;
+      position: relative;
 
       &:hover {
         color: #2c5530;
@@ -193,8 +193,11 @@
         right: 0;
         bottom: 0;
         height: 2px;
-        background: #2c5530;
+        width: 100%;
+        background: red;
         border-radius: 0.5px;
+        display: block;
+        z-index: 100;
         transform: scaleX(0);
         transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         transform-origin: center;
