@@ -176,6 +176,10 @@
       background: transparent;
       min-height: 32px;
       position: relative;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+
 
       &:hover {
         color: #2c5530;
@@ -194,7 +198,7 @@
         bottom: 0;
         height: 2px;
         width: 100%;
-        background: red;
+        background: #2c5530;
         border-radius: 0.5px;
         display: block;
         z-index: 100;
