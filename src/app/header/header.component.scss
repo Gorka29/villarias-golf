@@ -100,23 +100,26 @@
 
   .hamburger-line {
     width: 24px;
-    height: 2px;
-    background: #4a5568;
-    transition: all 0.3s ease;
-    border-radius: 1px;
+    height: 2.5px;
+    background: #2c5530;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s, background 0.3s;
+    border-radius: 2px;
+    margin: 2.5px 0;
   }
 
   &.active {
     .hamburger-line {
-      &:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-      }
-      &:nth-child(2) {
-        opacity: 0;
-      }
-      &:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-      }
+      background: #2c5530;
+    }
+    .hamburger-line:nth-child(1) {
+      transform: translateY(12px) rotate(45deg) scaleX(1.4);
+    }
+    .hamburger-line:nth-child(2) {
+      opacity: 0;
+      transform: translateY(12px) rotate(45deg) scaleX(1.4);
+    }
+    .hamburger-line:nth-child(3) {
+      transform: translateY(-11px) rotate(-45deg) scaleX(1.4);
     }
   }
 }
