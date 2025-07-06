@@ -61,5 +61,40 @@ export class ContactoComponent implements OnInit {
 
   getWeatherIconUrl(iconCode: string): string {
     return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+  //   // Mapeo de condiciones del tiempo a imágenes del campo de golf
+  //   const weatherToGolfImage: { [key: string]: string } = {
+  //     // Días soleados - usar hoyos con buen tiempo
+  //     '01d': 'assets/hoyo 1 mejorado.png', // Cielo despejado
+  //     '01n': 'assets/hoyo 2 mejorado.png', // Cielo despejado noche
+  //     '02d': 'assets/hoyo 3 mejorado.png', // Pocas nubes
+  //     '02n': 'assets/hoyo 4 mejorado.png', // Pocas nubes noche
+      
+  //     // Días nublados - usar hoyos con nubes
+  //     '03d': 'assets/hoyo 5 mejorado 2.png', // Nubes dispersas
+  //     '03n': 'assets/hoyo 6 mejorado.png', // Nubes dispersas noche
+  //     '04d': 'assets/hoyo 7 mejorado.png', // Nubes rotas
+  //     '04n': 'assets/hoyo 8 mejorado.png', // Nubes rotas noche
+      
+  //     // Lluvia - usar hoyos que se vean bien con lluvia
+  //     '09d': 'assets/hoyo 9 mejorado .png', // Lluvia ligera
+  //     '09n': 'assets/hoyo 1 mejorado.png', // Lluvia ligera noche
+  //     '10d': 'assets/hoyo 2 mejorado.png', // Lluvia
+  //     '10n': 'assets/hoyo 3 mejorado.png', // Lluvia noche
+  //     '11d': 'assets/hoyo 4 mejorado.png', // Tormenta
+  //     '11n': 'assets/hoyo 5 mejorado 2.png', // Tormenta noche
+      
+  //     // Nieve
+  //     '13d': 'assets/hoyo 6 mejorado.png', // Nieve
+  //     '13n': 'assets/hoyo 7 mejorado.png', // Nieve noche
+      
+  //     // Niebla
+  //     '50d': 'assets/hoyo 8 mejorado.png', // Niebla
+  //     '50n': 'assets/hoyo 9 mejorado .png', // Niebla noche
+  //   };
+
+  //   // Si no encontramos el código, usar una imagen por defecto
+  //   return weatherToGolfImage[iconCode] || 'assets/hoyo 1 mejorado.png';
+  // }
   }
 }
