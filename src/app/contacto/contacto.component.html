@@ -164,11 +164,10 @@
             </div>
           </div>
           <div class="mt-6 p-4 bg-white rounded border">
-            <p class="text-sm text-gray-700">
-              <strong>Recomendación:</strong>
+            <p class="text-sm text-gray-700 text-center">
               {{ weatherData.main.temp >= 15 && weatherData.main.temp <= 25 && weatherData.main.humidity <= 70
-                ? 'Condiciones perfectas para jugar golf'
-                : 'Considera las condiciones antes de jugar' }}
+                ? 'Condiciones perfectas para jugar golf.'
+                : 'Condiciones mejorables para jugar golf.' }}
             </p>
           </div>
         </div>
