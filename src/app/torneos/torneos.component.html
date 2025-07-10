@@ -1,4 +1,98 @@
-<div class="flex flex-col items-center justify-center min-h-screen w-full bg-white">
-  <h1 class="text-3xl font-bold mb-4">Torneos</h1>
-  <p class="text-lg text-gray-700">Página de información sobre los torneos del club.</p>
+<div class='flex flex-col items-center justify-center min-h-screen w-full bg-gradient-to-br from-green-50 to-blue-50 p-8 pt-28'>
+  <div class='max-w-6xl w-full'>
+    <h1 class='text-5xl font-bold mb-4 text-center text-green-800 drop-shadow-lg'>🏆 Torneos en Villarias</h1>
+
+    <p class='text-xl text-gray-700 mb-12 text-center leading-relaxed max-w-3xl mx-auto'>
+      En nuestro campo fomentamos la competición, la solidaridad y la pasión por el golf a lo largo de todo el año. Estos son los principales torneos que celebramos:
+    </p>
+
+    <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <!-- Masters de Villarias -->
+      <div
+        class='group relative overflow-hidden bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer'
+        (click)='navegarATorneo("/torneos/masters-villarias")'>
+        <div class='absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-400 to-green-600'></div>
+        <div class='p-8'>
+          <div class='flex items-center mb-4'>
+            <h2 class='text-xl font-bold text-green-800'>Masters de Villarias</h2>
+          </div>
+          <div class='mb-4'>
+            <span class='inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-3'>Novedad 2025</span>
+          </div>
+          <p class='text-gray-600 mb-6 leading-relaxed'>
+            Este año estrenamos nuestro Masters de Villarias, un torneo especial que reunirá a los mejores jugadores del club en una jornada competitiva de alto nivel.
+          </p>
+          <div class='space-y-3'>
+            <div class='flex items-center text-green-700'>
+              <span class='mr-3 text-lg'>📅</span>
+              <span class='font-medium'>Fecha: próximamente</span>
+            </div>
+            <div class='flex items-center text-green-700'>
+              <span class='mr-3 text-lg'>🎯</span>
+              <span class='font-medium'>¡No te lo pierdas!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Torneo Solidario AFAMER -->
+      <div
+        class='group relative overflow-hidden bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer'
+        (click)='navegarATorneo("/torneos/torneo-afamer")'>
+        <div class='absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-pink-400 to-red-500'></div>
+        <div class='p-8'>
+          <div class='flex items-center mb-4'>
+            <h2 class='text-xl font-bold text-pink-800'>Torneo Solidario AFAMER</h2>
+          </div>
+          <div class='mb-4'>
+            <span class='inline-block bg-pink-100 text-pink-800 text-sm font-semibold px-3 py-1 rounded-full mb-3'>Evento Solidario</span>
+          </div>
+          <p class='text-gray-600 mb-6 leading-relaxed'>
+            Cada septiembre organizamos el tradicional Torneo AFAMER, un evento solidario cuya recaudación se destina a una asociación de lucha contra el cáncer de Las Merindades.
+          </p>
+          <div class='space-y-3'>
+            <div class='flex items-center text-pink-700'>
+              <span class='mr-3 text-lg'>📅</span>
+              <span class='font-medium'>Septiembre de cada año</span>
+            </div>
+            <div class='flex items-center text-pink-700'>
+              <span class='mr-3 text-lg'>🤝</span>
+              <span class='font-medium'>Participa y colabora por una buena causa.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Liga Social Villarias -->
+      <div
+        class='group relative overflow-hidden bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 md:col-span-2 lg:col-span-1 cursor-pointer'
+        (click)='navegarATorneo("/torneos/liga-social")'>
+        <div class='absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-blue-600'></div>
+        <div class='p-8'>
+          <div class='flex items-center mb-4'>
+            <div class='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4'>
+              <span class='text-2xl'>📅</span>
+            </div>
+            <h2 class='text-xl font-bold text-blue-800'>Liga Social Villarias</h2>
+          </div>
+          <div class='mb-4'>
+            <span class='inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-3'>Competición Anual</span>
+          </div>
+          <p class='text-gray-600 mb-6 leading-relaxed'>
+            Durante todo el año celebramos nuestra Liga Social, con un torneo cada mes (excepto en agosto). Es la mejor forma de disfrutar del golf de forma regular y competitiva.
+          </p>
+          <div class='space-y-3'>
+            <div class='flex items-center text-blue-700'>
+              <span class='mr-3 text-lg'>📍</span>
+              <span class='font-medium'>11 torneos al año</span>
+            </div>
+            <div class='flex items-center text-blue-700'>
+              <span class='mr-3 text-lg'>🏆</span>
+              <span class='font-medium'>Clasificación general y premios para los más constantes.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
