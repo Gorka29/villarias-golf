@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-content',
@@ -11,4 +11,10 @@ import { RouterModule } from '@angular/router';
 })
 export class MainContentComponent {
   title = 'villarias-golf';
+
+  constructor(private router: Router) {}
+
+  navegarACampo(): void {
+    this.router.navigate(['/campo']);
+  }
 }
