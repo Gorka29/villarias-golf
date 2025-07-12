@@ -1,7 +1,7 @@
 .footer {
   background: linear-gradient(135deg, #1a3d1e 0%, #2c5530 100%);
   color: #ffffff;
-  padding: 3rem 0 1rem;
+  padding: 3rem 0 3rem;
   margin-top: auto;
 }
 
@@ -204,7 +204,7 @@
 // Media queries para responsive
 @media (max-width: 768px) {
   .footer {
-    padding: 2rem 0 1rem;
+    padding: 2rem 0 2rem;
   }
 
   .footer-container {
