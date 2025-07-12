@@ -29,6 +29,64 @@
     </div>
   </div>
 
+  <!-- Popup Modal -->
+  <div *ngIf="popupHoyo" class="popup-overlay" (click)="cerrarPopup()">
+    <div class="popup-card" (click)="$event.stopPropagation()">
+      <button class="popup-close" (click)="cerrarPopup()">&times;</button>
+      <ng-container [ngSwitch]="popupHoyo">
+        <div *ngSwitchCase="1">
+          <!-- Card Hoyo 1 -->
+          <div class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4 w-full max-w-md mx-auto">
+            <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 1 mejorado.png" alt="Hoyo 1 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between">
+              <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 1 </h3>
+              <div class="flex flex-row justify-between">
+                <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 5 </span>
+                <span class="text-gray-500 text-md md:text-lg">📏 467/414 m </span>
+              </div>
+            </div>
+            <p class="text-base md:text-lg text-gray-700">
+              Hoyo directo, bandera visible al fondo. Fuera de límites a la izquierda, rough y arroyo a la derecha. Calle despejada tras el arroyo, bunkers protegiendo el green largo y plano.
+            </p>
+          </div>
+        </div>
+        <div *ngSwitchCase="2">
+          <!-- Card Hoyo 2 -->
+          <div class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4 w-full max-w-md mx-auto">
+            <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 2 mejorado.png" alt="Hoyo 2 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between">
+              <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 2 </h3>
+              <div class="flex flex-row justify-between">
+                <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
+                <span class="text-gray-500 text-md md:text-lg">📏 395/271 m </span>
+              </div>
+            </div>
+            <p class="text-base md:text-lg text-gray-700">
+              Dog-leg a la derecha. Salida por encima de los árboles, segundo golpe largo y complicado por la pendiente. Green con piano pronunciado y bunker a la derecha.
+            </p>
+          </div>
+        </div>
+        <div *ngSwitchCase="3">
+          <!-- Card Hoyo 3 -->
+          <div class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4 w-full max-w-md mx-auto">
+            <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 3 mejorado.png" alt="Hoyo 3 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between">
+              <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 3 </h3>
+              <div class="flex flex-row justify-between">
+                <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 3 </span>
+                <span class="text-gray-500 text-md md:text-lg">📏 171/111 m </span>
+              </div>
+            </div>
+            <p class="text-base md:text-lg text-gray-700">
+              Salida larga y exigente, green con pendiente hacia el fondo y la derecha. Mejor apoyarse a la izquierda.
+            </p>
+          </div>
+        </div>
+        <!-- ...más hoyos si lo deseas... -->
+      </ng-container>
+    </div>
+  </div>
+
   <div class="grid md:grid-cols-2 gap-8">
     <!-- Hoyo 1 -->
     <div id="hoyo-1" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">

@@ -1,8 +1,10 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-campo',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './campo.component.html',
   styleUrls: ['./campo.component.scss']
 })
@@ -20,8 +22,14 @@ export class CampoComponent {
     9: "Hoyo 9 · Par 4 · 340/300m · Hcp 4",
   };
 
+  popupHoyo: number | null = null;
+
   mostrarPopup(num: number): void {
-    alert("Hoyo " + num);
-    // También podrías usar un modal, toast, etc.
+    this.popupHoyo = num;
+    console.log(this.popupHoyo);
+  }
+
+  cerrarPopup(): void {
+    this.popupHoyo = null;
   }
 }
