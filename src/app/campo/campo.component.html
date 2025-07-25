@@ -44,200 +44,250 @@
     <div class="popup-card" (click)="$event.stopPropagation()">
       <button class="popup-close" (click)="cerrarPopup()">&times;</button>
       <ng-container [ngSwitch]="popupHoyo">
-        <div *ngSwitchCase="1">
+        <div *ngSwitchCase="1" class="flex-1 flex items-center justify-center">
           <!-- Card Hoyo 1 -->
-          <div class="bg-white rounded-xl p-6 md:p-10 flex flex-col gap-4 w-full max-w-md mx-auto">
-            <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 1 mejorado.png" alt="Hoyo 1 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-            <div class="flex flex-col items-center justify-between">
-              <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 1 </h3>
-              <div class="flex flex-row justify-between">
-                <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 5 </span>
-                <span class="text-gray-500 text-md md:text-lg">📏 467/414 m </span>
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/hoyo 1 mejorado.png" alt="Hoyo 1 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 1 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 5 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 467/414 m </span>
+                </div>
               </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                Hoyo directo, la bandera se ve al fondo.
+                <br>
+                <br>
+                De salida, a la izquierda la valla nos marca el fuera limites; a la derecha rough con árboles, continuado con un arroyo que no vemos desde el tee con estacas rojas, al frente este mismo a 250- 260 mts. del tee, fácil pasar de segundo golpe.
+                <br>
+                <br>
+                A partir del arroyo, calle despejada, bunker a la derecha a 50 mts. de la entrada de green. Green largo, girando a la izquierda, plano, defendido por un bunker grande a la izquierda y uno más pequeño a la derecha.
+                <br>
+                <br>
+                El tee del hoyo 2 está por detrás del green.
+              </p>
             </div>
-            <p class="text-base md:text-lg text-gray-700 text-center">
-              Hoyo directo, la bandera se ve al fondo.
-              <br>
-              <br>
-              De salida, a la izquierda la valla nos marca el fuera limites; a la derecha rough con árboles, continuado con un arroyo que no vemos desde el tee con estacas rojas, al frente este mismo a 250- 260 mts. del tee, fácil pasar de segundo golpe.
-              <br>
-              <br>
-              A partir del arroyo, calle despejada, bunker a la derecha a 50 mts. de la entrada de green. Green largo, girando a la izquierda, plano, defendido por un bunker grande a la izquierda y uno más pequeño a la derecha.
-              <br>
-              <br>
-              El tee del hoyo 2 está por detrás del green.
-            </p>
           </div>
         </div>
-        <div *ngSwitchCase="2">
+        <div *ngSwitchCase="2" class="flex-1 flex items-center justify-center">
           <!-- Card Hoyo 2 -->
-          <div class="bg-white rounded-xl p-6 md:p-10 flex flex-col gap-4 w-full max-w-md mx-auto">
-            <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/Hoyo_2_blanco.png" alt="Hoyo 2 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-            <div class="flex flex-col items-center justify-between">
-              <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 2 </h3>
-              <div class="flex flex-row justify-between">
-                <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
-                <span class="text-gray-500 text-md md:text-lg">📏 395/271 m </span>
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/Hoyo_2_blanco.png" alt="Hoyo 2 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 2 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 395/271 m </span>
+                </div>
               </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                Hoyo con dog-leg hacia la derecha. Salida por encima de los árboles y buscando la parte derecha del bunker que se ve al fondo. De segundo golpe tiro complicado y un poco largo debido a la pendiente de la calle, además se estrecha.
+                <br>
+                <br>
+                Cuando empieza la subida estacas rojas a la izquierda. Green con un piano muy pronunciado protegido por la izquierda por un bunker. Atención a la posición de bandera.
+                <br>
+                <br>
+                Salimos por la derecha del green hacia el tee 3.
+              </p>
             </div>
-            <p class="text-base md:text-lg text-gray-700 text-center">
-              Hoyo con dog-leg hacia la derecha. Salida por encima de los árboles y buscando la parte derecha del bunker que se ve al fondo. De segundo golpe tiro complicado y un poco largo debido a la pendiente de la calle, además se estrecha.
-              <br>
-              <br>
-              Cuando empieza la subida estacas rojas a la izquierda. Green con un piano muy pronunciado protegido por la izquierda por un bunker. Atención a la posición de bandera.
-              <br>
-              <br>
-              Salimos por la derecha del green hacia el tee 3.
-            </p>
           </div>
         </div>
-        <div *ngSwitchCase="3">
+        <div *ngSwitchCase="3" class="flex-1 flex items-center justify-center">
           <!-- Card Hoyo 3 -->
-          <div class="bg-white rounded-xl p-6 md:p-10 flex flex-col gap-4 w-full max-w-md mx-auto">
-            <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/Hoyo_3_blanco-1.png" alt="Hoyo 3 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-            <div class="flex flex-col items-center justify-between">
-              <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 3 </h3>
-              <div class="flex flex-row justify-between">
-                <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 3 </span>
-                <span class="text-gray-500 text-md md:text-lg">📏 171/111 m </span>
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/Hoyo_3_blanco-1.png" alt="Hoyo 3 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 3 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 3 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 171/111 m </span>
+                </div>
               </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                Salida larga y complicada con el tee atrasado, volar mucho la bola y apoyarse un poco a la izquierda.
+                <br>
+                <br>
+                Si la salida está adelantada golpe de 123 mts., apoyarse a la izquierda.
+                <br>
+                <br>
+                Green con pendiente hacia el fondo y a la derecha.
+                <br>
+                <br>
+                Salimos por la izquierda hacia el tee 4.
+              </p>
             </div>
-            <p class="text-base md:text-lg text-gray-700 text-center">
-              Salida larga y exigente, green con pendiente hacia el fondo y la derecha. Mejor apoyarse a la izquierda.
-            </p>
           </div>
         </div>
-        <!-- ...más hoyos si lo deseas... -->
+        <div *ngSwitchCase="4" class="flex-1 flex items-center justify-center">
+          <!-- Card Hoyo 4 -->
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/hoyo 4 mejorado.png" alt="Hoyo 4 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 4 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 229/213 m </span>
+                </div>
+              </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                Hoyo en vaguada, salida por encima de los arboles y apoyándose ligeramente a la izquierda. La calle se ensancha hacia la izquierda para ir estrechándose progresivamente.
+                <br>
+                <br>
+                A la derecha y antes de los arboles un bunker pequeño pero profundo (entra mucho en juego). Los pegadores pueden llegar a green de salida pero el riesgo es muy grande.
+                <br>
+                <br>
+                Los arboles de la derecha están acordonados por estacas rojas. Green pequeño y alargado protegido por 2 bunkers, uno pequeño a la izquierda y otro a la derecha que entra mucho en juego.
+                <br>
+                <br>
+                Salimos por la izquierda del green y subimos por la cuesta empinada al tee 5.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchCase="5" class="flex-1 flex items-center justify-center">
+          <!-- Card Hoyo 5 -->
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/hoyo 5 mejorado 2.png" alt="Hoyo 5 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 5 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 5 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 445/405 m </span>
+                </div>
+              </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                Salida de hierro y apoyándose a la izquierda. Toda la derecha del hoyo son estacas rojas. 2º golpe con pendiente hacia la derecha, hay que apoyarse mucho a la izquierda, procurar no llegar al bunker que tenemos de frente.
+                <br>
+                <br>
+                3º golpe fácil para llegar a green. Mirar la ubicación de la bandera.
+                <br>
+                <br>
+                Green con 2 plataformas y un gran piano a la izquierda y protegido con un bunker grande a la derecha y uno pequeño al fondo.
+                <br>
+                <br>
+                Volvemos un poco para atrás para coger el camino que baja al tee 6.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchCase="6" class="flex-1 flex items-center justify-center">
+          <!-- Card Hoyo 6 -->
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/hoyo 6 mejorado.png" alt="Hoyo 6 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 6 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 405/333 m </span>
+                </div>
+              </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                El hoyo más difícil. El tee esta a la derecha de la cuesta que hemos bajado, en el alto entre los árboles.
+                <br>
+                <br>
+                Salida muy larga, si se queda corta es preferible jugarlo como par 5 jugando el segundo golpe a dejarla antes del lago.
+                <br>
+                <br>
+                Desde la regata de la derecha hasta pasado el green estacas rojas.
+                <br>
+                <br>
+                2º golpe de los pegadores hay que darlo por encima de los arboles de la izquierda.
+                <br>
+                <br>
+                Green protegido por un bunker a la izquierda.
+                <br>
+                <br>
+                Rodeamos el lago y estamos en el tee 7.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchCase="7" class="flex-1 flex items-center justify-center">
+          <!-- Card Hoyo 7 -->
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/hoyo 7 mejorado.png" alt="Hoyo 7 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 7 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 3 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 170/120 m </span>
+                </div>
+              </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                Salida estrecha, la calle se abre un poco a la izquierda. Estacas rojas a la izquierda y a la derecha nos queda el arroyo del hoyo 6. Dos bunker a la izquierda de la calle.
+                <br>
+                <br>
+                2º golpe complicado, agua frontal hasta el green. Apoyarse a la derecha del green.
+                <br>
+                <br>
+                Green amplio protegido con 2 bunkers a la derecha.
+                <br>
+                <br>
+                Salimos por la derecha del green y estamos en el tee 8.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchCase="8" class="flex-1 flex items-center justify-center">
+          <!-- Card Hoyo 8 -->
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/hoyo 8 mejorado.png" alt="Hoyo 8 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 8 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 350/320 m </span>
+                </div>
+              </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                El hoyo más fácil del recorrido.
+                <br>
+                <br>
+                Salida limpia, se ve la bandera al fondo. Hay un bunker en medio de la calle, los pegadores llegan fácil.
+                <br>
+                <br>
+                2º golpe a green con la única dificultad del bunker que hay a la izquierda del green.
+                <br>
+                <br>
+                Green alargado y con lomas a izquierda y a derecha que recogen la bola al green.
+                <br>
+                <br>
+                Salimos por la izquierda del green y subimos por la cuesta empinada al tee 9.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchCase="9" class="flex-1 flex items-center justify-center">
+          <!-- Card Hoyo 9 -->
+          <div class="bg-white rounded-xl p-6 md:p-12 flex flex-col lg:flex-row gap-4 md:gap-6 w-full h-full max-w-lg lg:max-w-4xl mx-auto">
+            <div class="flex-1"><img src="/assets/hoyo 9 mejorado .png" alt="Hoyo 9 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
+            <div class="flex flex-col items-center justify-between md:flex-1 md:justify-center">
+              <div class="mb-10">
+                <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2 text-center">Hoyo 9 </h3>
+                <div class="flex flex-row justify-between">
+                  <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
+                  <span class="text-gray-500 text-md md:text-lg">📏 340/300 m </span>
+                </div>
+              </div>
+              <p class="text-base md:text-lg text-gray-700 text-center">
+                Salida con dificultad si pensamos en el agua que tenemos a la izquierda del hoyo. Estacas rojas por todo el arroyo que continúan por la izquierda de la calle hasta pasado el green. Green protegido a cada lado por 2 pequeños bunkers que entran mucho en juego. Caída hacia el fondo y a la izquierda.
+                <br>
+                <br>
+                Salimos por la derecha y subimos la pequeña cuesta para continuar el recorrido con otra vuelta o ir a la cafetería a tomar un aperitivo.
+              </p>
+            </div>
+          </div>
+        </div>
       </ng-container>
     </div>
   </div>
-
-  <!-- <div class="grid md:grid-cols-2 gap-8">
-    Hoyo 1
-    <div id="hoyo-1" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 1 mejorado.png" alt="Hoyo 1 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 1 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 5 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 467/414 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Hoyo directo, bandera visible al fondo. Fuera de límites a la izquierda, rough y arroyo a la derecha. Calle despejada tras el arroyo, bunkers protegiendo el green largo y plano.
-      </p>
-    </div>
-    Hoyo 2
-    <div id="hoyo-2" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 2 mejorado.png" alt="Hoyo 2 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 2 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 395/271 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Dog-leg a la derecha. Salida por encima de los árboles, segundo golpe largo y complicado por la pendiente. Green con piano pronunciado y bunker a la derecha.
-      </p>
-    </div>
-    Hoyo 3
-    <div id="hoyo-3" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 3 mejorado.png" alt="Hoyo 3 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 3 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 3 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 171/111 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Salida larga y exigente, green con pendiente hacia el fondo y la derecha. Mejor apoyarse a la izquierda.
-      </p>
-    </div>
-    Hoyo 4
-    <div id="hoyo-4" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 4 mejorado.png" alt="Hoyo 4 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 4 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 229/213 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Hoyo en vaguada, salida por encima de los árboles. Calle que se estrecha, bunkers a ambos lados del green pequeño y alargado.
-      </p>
-    </div>
-    Hoyo 5
-    <div id="hoyo-5" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 5 mejorado 2.png" alt="Hoyo 5 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 5 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 5 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 445/405 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Salida de hierro, toda la derecha con estacas rojas. Segundo golpe con pendiente, green con dos plataformas y bunkers.
-      </p>
-    </div>
-    Hoyo 6
-    <div id="hoyo-6" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 6 mejorado.png" alt="Hoyo 6 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 6 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 405/333 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        El hoyo más difícil. Salida larga, preferible jugarlo como par 5 si es corta. Green protegido por bunker a la izquierda, rodeado de lago y estacas rojas.
-      </p>
-    </div>
-    Hoyo 7
-    <div id="hoyo-7" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 7 mejorado.png" alt="Hoyo 7 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 7 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 3 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 170/120 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Salida elevada, green protegido por bunkers. Precisión clave, viento puede influir. Green con ligera pendiente.
-      </p>
-    </div>
-    Hoyo 8
-    <div id="hoyo-8" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 8 mejorado.png" alt="Hoyo 8 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 8 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 350/320 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Hoyo recto, salida cómoda. Bunker a la derecha en la caída de drive. Green amplio, protegido por bunker frontal.
-      </p>
-    </div>
-    Hoyo 9
-    <div id="hoyo-9" class="bg-white rounded-xl shadow p-6 md:p-10 flex flex-col gap-4">
-      <div class="w-full h-64 md:h-96 mb-4"><img src="/assets/hoyo 9 mejorado .png" alt="Hoyo 9 Villarias" class="rounded-lg w-full h-full object-contain" /></div>
-      <div class="flex flex-col items-center justify-between">
-        <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-2">Hoyo 9 </h3>
-        <div class="flex flex-row justify-between">
-          <span class="text-gray-500 text-md md:text-lg mr-8">⛳ Par 4 </span>
-          <span class="text-gray-500 text-md md:text-lg">📏 340/300 m </span>
-        </div>
-      </div>
-      <p class="text-base md:text-lg text-gray-700 text-center">
-        Hoyo de cierre, salida con ligera dificultad por árboles. Calle ancha, green defendido por bunkers laterales. Final ideal para disfrutar el recorrido.
-      </p>
-    </div>
-  </div> -->
 </div>

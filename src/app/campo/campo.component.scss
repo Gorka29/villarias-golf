@@ -74,6 +74,9 @@
   display: none;
   position: relative;
 }
+.popup-card img {
+  max-height: 648px;
+}
 
 @media (max-width: 900px) {
   .mapa-horizontal {
@@ -109,6 +112,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .popup-card img {
+    max-height: 416px;
+  }
+}
+
 .popup-overlay {
   position: fixed;
   z-index: 1000;
@@ -124,11 +133,15 @@
   background: #fff;
   border-radius: 1rem;
   max-width: 95vw;
-  max-height: 90vh;
+  max-height: 95vh;
+  min-height: 75vh;
+  height: 75vh;
   overflow-y: auto;
   position: relative;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   animation: popupIn 0.25s;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes popupIn {
