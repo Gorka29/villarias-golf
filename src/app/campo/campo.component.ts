@@ -18,4 +18,8 @@ export class CampoComponent {
   cerrarPopup(): void {
     this.popupHoyo = null;
   }
+
+  openVideo(url: string): void {
+    window.open(url, '_blank');
+  }
 }
