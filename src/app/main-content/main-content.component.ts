@@ -42,7 +42,7 @@ export class MainContentComponent implements AfterViewInit, OnDestroy {
         if (entry.isIntersecting) {
           const video = entry.target as HTMLVideoElement;
           // Cargar el video solo cuando sea visible
-          video.src = '../../assets/ibon_carrito_baja_calidad.mp4';
+          video.src = '/videos/ibon_carrito_baja_calidad.mp4';
           video.load();
 
           // Una vez cargado, desconectar el observer
