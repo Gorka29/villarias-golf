@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import emailjs from '@emailjs/browser';
+
+const EMAILJS_SERVICE_ID  = 'service_villarias';
+const EMAILJS_TEMPLATE_ID = 'template_contacto';
+const EMAILJS_PUBLIC_KEY  = 'YNEVaf9cqbND7WARg';
 
 interface WeatherData {
   main: {
@@ -19,7 +25,7 @@ interface WeatherData {
 @Component({
   selector: 'app-contacto',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss']
 })
@@ -27,12 +33,43 @@ export class ContactoComponent implements OnInit {
   weatherData: WeatherData | null = null;
   loading = false;
   error = '';
-  Math = Math; // Para usar Math en el template
+  Math = Math;
+
+  formData = { nombre: '', telefono: '', email: '', mensaje: '' };
+  sending = false;
+  sendSuccess = false;
+  sendError = '';
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.getWeatherData();
+  }
+
+  onSubmit() {
+    this.sending = true;
+    this.sendSuccess = false;
+    this.sendError = '';
+
+    emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      {
+        from_name:  this.formData.nombre,
+        from_email: this.formData.email,
+        phone:      this.formData.telefono,
+        message:    this.formData.mensaje,
+        to_email:   'gorkaruizaraujo@gmail.com',
+      },
+      EMAILJS_PUBLIC_KEY
+    ).then(() => {
+      this.sendSuccess = true;
+      this.formData = { nombre: '', telefono: '', email: '', mensaje: '' };
+      this.sending = false;
+    }).catch(() => {
+      this.sendError = 'No se pudo enviar el mensaje. Por favor, inténtalo de nuevo.';
+      this.sending = false;
+    });
   }
 
   getWeatherData() {
